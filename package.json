@@ -1,0 +1,25 @@
+{
+  "name": "blob64",
+  "version": "1.0.0",
+  "description": "Serializes blobs to strings and can deserialize back into blobs",
+  "main": "blob64.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angadn/blob64.git"
+  },
+  "keywords": [
+    "blobs",
+    "blob",
+    "base64",
+    "localstorage"
+  ],
+  "author": "Angad Nadkarni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angadn/blob64/issues"
+  },
+  "homepage": "https://github.com/angadn/blob64#readme"
+}
