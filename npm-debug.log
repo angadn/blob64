@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.8.5
+3 info using node@v0.12.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/angadn/Code/blob64',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/angadn/.npm/blob64/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/angadn/.npm correctMkdir not in flight; initializing
+10 info lifecycle blob64@1.0.0~prepublish: blob64@1.0.0
+11 silly lifecycle blob64@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/angadn/.npm/blob64/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/angadn/Code/blob64' ]
+13 verbose tarball /Users/angadn/.npm/blob64/1.0.0/package.tgz
+14 verbose folder /Users/angadn/Code/blob64
+15 verbose addLocalTarball adding from inside cache /Users/angadn/.npm/blob64/1.0.0/package.tgz
+16 verbose correctMkdir /Users/angadn/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd blob64@1.0.0
+18 verbose afterAdd /Users/angadn/.npm/blob64/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/angadn/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/angadn/.npm/blob64/1.0.0/package/package.json written
+21 silly publish { name: 'blob64',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Serializes blobs to strings and can deserialize back into blobs',
+21 silly publish   main: 'blob64.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/angadn/blob64.git' },
+21 silly publish   keywords: [ 'blobs', 'blob', 'base64', 'localstorage' ],
+21 silly publish   author: { name: 'Angad Nadkarni' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/angadn/blob64/issues' },
+21 silly publish   homepage: 'https://github.com/angadn/blob64#readme',
+21 silly publish   readme: '# blob64\nSerialises Blobs to a string-representation using Base64 and can deserialise strings into Blobs. Great to persist blobs into Local-Storage.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '6cbdfb9425539938564e7c3560507bcf661e19ac',
+21 silly publish   _id: 'blob64@1.0.0',
+21 silly publish   _shasum: 'acb5176a67adec9eb92a79d6ef98b782b8ba6ca4',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name blob64
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data { raw: 'blob64',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'blob64',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/blob64
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /Users/angadn/.npm/blob64/1.0.0/package.tgz
+30 verbose request uri http://registry.npmjs.org/blob64
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 1:27:41 PM
+33 verbose request using bearer token for auth
+34 verbose request id c96fed6b4d6a2a0a
+35 http request PUT http://registry.npmjs.org/blob64
+36 http 403 http://registry.npmjs.org/blob64
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '100',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 18 Apr 2016 07:57:42 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1460966261.486923,VS0,VE855',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/angadn/.npm/registry.npmjs.org/blob64 on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "blob64". Are you logged in as the correct user? : blob64
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at Request.emit (events.js:110:17)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at Request.emit (events.js:129:20)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose stack     at IncomingMessage.emit (events.js:129:20)
+40 verbose stack     at _stream_readable.js:908:16
+41 verbose statusCode 403
+42 verbose pkgid blob64
+43 verbose cwd /Users/angadn/Code/blob64
+44 error Darwin 15.0.0
+45 error argv "node" "/usr/local/bin/npm" "publish"
+46 error node v0.12.7
+47 error npm  v3.8.5
+48 error code E403
+49 error you do not have permission to publish "blob64". Are you logged in as the correct user? : blob64
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
