@@ -10,7 +10,7 @@ var Blob64 = (function () {
         };
     };
     Blob64.deserialize = function (str) {
-        var indexOfComma = str.indexOf(",");
+        var indexOfComma = str.lastIndexOf(",");
         var contentType = str.substr(0, indexOfComma + 1) || "";
         var byteChars = atob(str.substr(indexOfComma + 1));
         var sliceSize = 512;

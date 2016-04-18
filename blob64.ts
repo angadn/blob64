@@ -10,7 +10,7 @@ export class Blob64 {
 
   static deserialize(str: string): Blob {
     // Ref: http://stackoverflow.com/a/16245768/382564
-    let indexOfComma = str.indexOf(",");
+    let indexOfComma = str.lastIndexOf(",");
     let contentType = str.substr(0, indexOfComma + 1) || "";
     let byteChars = atob(str.substr(indexOfComma + 1));
     let sliceSize = 512;
