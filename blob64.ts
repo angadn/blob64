@@ -12,7 +12,7 @@ export class Blob64 {
     // Ref: http://stackoverflow.com/a/16245768/382564
     let indexOfComma = str.indexOf(",");
     let contentType = str.substr(0, indexOfComma + 1) || "";
-    let byteChars = atob(str.substr(indexOfComma));
+    let byteChars = atob(str.substr(indexOfComma + 1));
     let sliceSize = 512;
 
     let byteArrays = [];

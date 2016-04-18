@@ -1,5 +1,5 @@
 {
-  "name": "blob64",
+  "name": "blob64-ts",
   "version": "1.0.0",
   "description": "Serializes blobs to strings and can deserialize back into blobs",
   "main": "blob64.js",
